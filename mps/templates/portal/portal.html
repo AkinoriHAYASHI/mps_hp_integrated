@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="{% static 'css/pc_potal.css' %}" rel="stylesheet">
+{% endblock %} {% block contents %}
+        
+        <article class="mainct mainmsg">
+            <div id="acts">
+                <hr class="blue_bar">
+                <h1>主な活動内容</h1>
+                <ul>
+                    <li>プロジェクト・ミーティング（提案・経過報告）</li>
+                    <li>勉強会（自身の勉強した本の紹介や知識の共有）</li>
+                </ul>
+            </div>
+            <div id="targets">
+                <hr class="black_bar">
+                <h1>対象となる方（いずれか一つでも）</h1>
+                <ul>
+                    <li>現状のソフトウェアやその開発方法に問題意識のある方</li>
+                    <li>IT技術を用いて解決したい身の回りの問題を持っている方</li>
+                    <li>何か作りたいソフトウェアがある方</li>
+                    <li>何かを一緒に作る仲間が欲しい方</li>
+                    <li>プログラミングに興味のある方</li>
+                    <li>プロジェクトマネジメントに興味のある方</li>
+                    <li>ユーザインタフェースデザインに興味のある方</li>
+                    <li>リーダシップ力を向上したい方</li>
+                    <li>知識や技術を誰かと共有したい方</li>
+                    <li>自身のキャリアアップを図りたい方</li>
+                    <li>自分たちの手で作ったもので社会貢献したい方</li>
+                </ul>
+            </div>
+            <div id="news">
+                <hr class="red_bar">
+                <h1>新着情報</h1>
+                <div class="twitter-size">
+                    <a class="twitter-timeline" href="https://twitter.com/MPS_Be_Creative" data-widget-id="574112480143798272" data-chrome="noheader nofooter">Tweets by @MPS_Be_Creative</a>
+                    <script>
+                                                                                    !function(d, s, id) {
+                                                                                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                                                                        if (!d.getElementById(id)) {
+                                                                                            js = d.createElement(s);
+                                                                                            js.id = id;
+                                                                                            js.src = p + "://platform.twitter.com/widgets.js";
+                                                                                            fjs.parentNode.insertBefore(js, fjs);
+                                                                                        }
+                                                                                    }(document, "script", "twitter-wjs");
+                                                                                </script>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="sns">
+                <p>
+                    近日開設致しました！！ 是非いいねボタンをお待ちしております！<br />╰(*´︶`*)╯♡
+                </p>
+                <table>
+                    <tr>
+                        <th><a href="https://www.facebook.com/mpsamurai" target="_blank"><img src="{% static 'images/fb.png' %}" alt="" style="width: 100px"></a><br />FaceBook</th>
+                        <th><a href="https://twitter.com/MPS_Be_Creative" target="_blank"><img src="{% static 'images/tw.png' %}" alt="" style="width: 100px"></a><br />Twitter</th>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <div class="app">
+            <p>
+                アプリ作成しました！！是非遊んでみてください！右は技術解説ブログです<br />╰(*´︶`*)╯♡
+            </p>
+            <table>
+                <tr>
+                    <th><a href="//mpsamurai.org/burasabori/" target="_blank"><img src="{% static 'images/rogo6.png' %}" alt="" width="150"></a><br />ぶらサボり</th>
+                    <th><a href="//mpsamurai.org/bura_tech/" target="_blank"><img src="{% static 'images/talk_kaeru5.png' %}" alt="" width="140"></a><br />ぶらTech</th>
+                </tr>
+            </table>
+        </div>
+
+        
+ {% endblock %}

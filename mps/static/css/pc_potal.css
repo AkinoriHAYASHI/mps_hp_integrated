@@ -1,0 +1,79 @@
+/* コンテンツエリア */
+.mainct {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* [主な活動内容]コメントエリア */
+#acts {
+	float: left;
+	width: 50%;
+}
+
+/* [対象となる方]コメントエリア */
+#targets {
+	float: right;
+	width: 50%;
+}
+/* [新着情報]コメントエリア */
+#news {
+	float: right;
+	width: 50%;
+	margin: auto;
+}
+.twitter-size {
+	margin-bottom: 150px;
+}
+
+/* SNSエリア */
+.sns p {
+	font-size: 15px;
+	color: palevioletred;
+	text-align: center;
+}
+
+.sns table {
+	margin-left: auto;
+	margin-right: auto;
+	color: blue;
+}
+
+.sns th {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* ぶらサボりアプリエリア */
+.app p {
+	font-size: 15px;
+	color: springgreen;
+	text-align: center;
+}
+
+.app table {
+	margin-left: auto;
+	margin-right: auto;
+	color: blue;
+}
+
+.app th {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+@media only screen and (max-width:768px) {
+#acts {
+		width: 100%;
+	}
+	#targets {
+		width: 100%;
+	}
+	#news {
+		width: 100%;
+	}
+}
+
+

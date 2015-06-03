@@ -1,0 +1,77 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="{% static 'css/registration.css' %}" rel="stylesheet">
+{% endblock %} 
+
+
+{% block contents %}
+
+
+
+
+    <h3>メンバー登録</h3>
+    <p>※プロフィール画像は、Facebookのものが反映されます。</p>
+    <form class="form_custom" role="form" method="post" action="{% url 'members:complete' %}">
+        {% csrf_token %}
+
+        <table>
+            <tr>
+                <td><p>ユーザー名</p>{% for error in usercreation_form.username.errors %}<span class="alert-label">※必須</span>{% endfor %}</td>
+                <td><p class="{% if usercreation_form.username.errors %}alert alert-danger{% else %}custom{% endif %}">{{ usercreation_form.username }}</p></td>
+            </tr>
+            <tr>
+                <td><p>パスワード</p>{% for error in usercreation_form.password1.errors %}<span class="alert-label">※必須</span>{% endfor %}</td>
+                <td><p class="{% if usercreation_form.password1.errors %}alert alert-danger{% else %}custom{% endif %}">{{ usercreation_form.password1 }}</p></td>
+            </tr>
+            <tr>
+                <td><p>パスワード確認</p>{% for error in usercreation_form.password2.errors %}<span class="alert-label">※必須</span>{% endfor %}</td>
+                <td><p class="{% if usercreation_form.password2.errors %}alert alert-danger{% else %}custom{% endif %}">{{ usercreation_form.password2 }}</p></td>
+            </tr>
+            <tr>
+                <td><p>名前（姓）</p>{% for error in registration_form.last_name.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.last_name.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.last_name }}</p></td>
+            </tr>
+            <tr>
+                <td><p>名前（名）</p>{% for error in registration_form.first_name.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.first_name.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.first_name }}</p></td>
+            </tr>
+            <tr>
+                <td><p>ニックネーム</p>{% for error in registration_form.nickname.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.nickname.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.nickname }}</p></td>
+            </tr>
+            <tr>
+                <td><p>性別</p>{% for error in registration_form.gender.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.gender.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.gender }}</p></td>
+            </tr>
+            <tr>
+                <td><p>職種</p>{% for error in registration_form.current_job.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.current_job.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.current_job }}</p></td>
+            </tr>
+            <tr>
+                <td><p>前職種</p>{% for error in registration_form.previous_job.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.previous_job.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.previous_job }}</p></td>
+            </tr>
+            <tr>
+                <td><p>twitterアカウント</p>{% for error in registration_form.twitter.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.twitter.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.twitter }}</p></td>
+            </tr>
+            <tr>
+                <td><p>facebookアカウント</p>{% for error in registration_form.facebook.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.facebook.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.facebook }}</p></td>
+            </tr>
+            <tr>
+                <td><p>専門分野</p>{% for error in registration_form.spacialities.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.spacialities.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.spacialities }}</p></td>
+            </tr>
+            <tr>
+                <td><p>ひとこと自己紹介</p>{% for error in registration_form.introduction.errors %}<span class="alert-label">{{error}}</span>{% endfor %}</td>
+                <td><p class="{% if registration_form.introduction.errors %}alert alert-danger{% else %}custom{% endif %}">{{ registration_form.introduction }}</p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="メンバー登録" class="css_btn_class hover_button hvr-buzz-out" /></td>
+            </tr>
+        </table>
+    </form>
+
+
+{% endblock %}

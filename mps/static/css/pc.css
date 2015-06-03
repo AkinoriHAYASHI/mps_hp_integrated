@@ -1,0 +1,903 @@
+body {
+	max-width: 100%;
+	background: #fff;
+	-webkit-text-size-adjust: none;
+}
+.menu_btn{
+	margin-top: 30px;
+}
+
+
+.contents {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 100%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/* 文字 */
+a{
+	text-decoration: none;
+}
+p{
+	font-size: 15px;
+	font-weight:700;
+}
+
+/* コンテンツ文字 */
+.mainmsg h5 {
+	font-size: x-large;
+	line-height: 30px;
+}
+
+.mainmsg h4 {
+	font-size: x-large;
+	line-height: 30px;
+}
+
+.mainmsg h1 {
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+
+.mainmsg p {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+
+
+/* spanの自由に入れる文字 */
+
+span.small_text{
+	font-size:20px;
+	color: #DA508F;
+}
+span.small_text_bk{
+	font-size:15px;
+}
+
+
+/* div配置 */
+align_center{
+	align: center;
+}
+
+
+img {
+	max-width: 100%;
+}
+/* PCメイン MPSロゴ */
+img.main_logo {
+	margin-top:10px;
+	width: 150px;
+}
+
+img.main_logo_big {
+	width: 25%;
+}
+
+
+li {
+	font-weight: bold;
+	font-size: medium;
+	list-style-type: none;
+	display: inline-block;
+}
+
+/* トップのスライダーPC画面サイズ・文字フォント*/
+.slide1 h3 {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	z-index: 1;
+	font-size: 30px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #333333;
+	font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.slide1 p {
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	z-index: 1;
+	font-size: 20px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.slide2 h3 {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	z-index: 1;
+	font-size: 35px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #333333;
+	font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.slide2 p {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	z-index: 1;
+	font-size: 20px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #333333;
+	font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.slide3 h3 {
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	z-index: 1;
+	font-size: 50px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 3px 3px 3px #000;
+	font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.slide3 p {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	z-index: 1;
+	font-size: 30px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 3px 3px 3px #333333;
+	font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	font-weight: bold;
+}
+
+.slider {
+	width: 100%;
+	margin: 0px auto;
+}
+		/*使う？position: relative;*/
+.bg_img .slider li {
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 300px;
+}
+
+.bg_img .slider img {
+	z-index: 0;
+	width: 100%;
+	height: 300px;
+}
+
+#slider li a {
+	font-size: 24px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #333333;
+}
+
+/* スライダー画像の網掛け */
+#pageBody .mainVisual {
+	position: relative;
+}
+
+#pageBody .mainVisual img {
+	vertical-align: bottom;
+}
+
+#pageBody .mainVisual .mainVisualText {
+	position: absolute;
+	left: 50px;
+	bottom: 15px;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 60%;
+	width: 300px;
+	padding: 0px 15px;
+	padding-top: 0px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+/* スライダーのPC用ペジャー */
+.bx-pager {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+.bx-pager:before, .bx-pager:after {
+	content: "";
+	display: table;
+}
+
+.bx-pager:after {
+	clear: both;
+}
+
+.bx-pager a {
+	margin-right: 10px;
+	border: 1px solid #dddddd;
+	padding: 3px 5px;
+	color: #333333;
+	float: left;
+	text-decoration: none;
+}
+
+.bx-pager a.active {
+	color: #ffffff;
+	background-color: #333;
+}
+
+
+/* 参加募集・次回予告コメント */
+.checkit {
+	margin-top:50px;
+	width: 100%;
+}
+
+.check {
+	text-align: center;
+}
+
+/* エンドメッセージ */
+.endmsg {
+	font-size: 15px;
+	font-weight: bold;
+	color: crimson;
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+/* フッター */
+footer {
+	clear: both;
+	padding: 18px 0; overflow : hidden;
+	background: #1f1f1f;
+	border-top: 1px solid #555;
+	overflow: hidden;
+}
+footer p {
+	color: #fff;
+}
+.copyright p {
+	text-align: center;
+	font-size: 15px;
+}
+
+/* ブルー線 */
+hr.blue_bar {
+	height: 15px;
+	border: 0;
+	background: linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	background: -webkit-linear-gradient(left, #f5f5f5, #066, #f5f5f5);
+	background: -moz-linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	margin-top: 30px;
+}
+/* ピンク線 */
+hr.pink_bar {
+	height: 15px;
+	border: 0;
+	background: linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	background: -webkit-linear-gradient(left, #f5f5f5, #E02CB6, #f5f5f5);
+	background: -moz-linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	margin-top: 30px;
+}
+/* ブラック線 */
+hr.black_bar {
+	height: 15px;
+	border: 0;
+	background: linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	background: -webkit-linear-gradient(left, #f5f5f5, #666, #f5f5f5);
+	background: -moz-linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	margin-top: 30px;
+}
+/* レッド線 */
+hr.red_bar {
+	height: 15px;
+	border: 0;
+	background: linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	background: -webkit-linear-gradient(left, #f5f5f5, #CC0033, #f5f5f5);
+	background: -moz-linear-gradient(left, #f5f5f5, #999, #f5f5f5);
+	margin-top: 25px;
+}
+
+/* グレー線 */
+.glay_bar {
+    border: 0;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(178,198,145,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(178,198,145,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(178,198,145,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(178,198,145,0.75), rgba(0,0,0,0));
+}
+
+
+
+div.frame {
+	display: inline-block;
+	position: relative;
+}
+
+div.frame:after {
+	position: absolute;
+	display: block;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transform: rotate(3deg); /* ��]������ */
+	background: #fff;
+	z-index: -1;
+}
+
+
+
+div.scrollWrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+div.scrollableArea {
+	position: relative;
+	width: auto;
+	height: 100%;
+}
+
+
+
+
+/* スライダー下にある見出し・本のgif画像 */
+.openingmsg {
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+.openingmsg img {
+	float: left;
+}
+
+
+/* 文字リンクにオンマウスでカラー */
+a#na {
+	text-decoration: none;
+	color: #CC00FF;
+	font-size: large;
+}
+a#na:hover {
+	text-decoration: none;
+	color: #FF1493;
+	font-size: large;
+}
+a#box {
+	text-decoration: none;
+	color: #CC00FF;
+}
+a#box:hover {
+	text-decoration: none;
+	color: #FF1493;
+}
+
+/* 上部MPSロゴ＆新規メンバー＆ログイン 並び */
+.box1 {
+	float: left;
+}
+.box2 {
+	margin-top: 8px;
+	padding-right: 10px;
+	float: right;
+	text-align:center;
+}
+.box3 {
+	margin-top: 7px;
+    padding-right: 10px;  
+	float: right;
+		text-align:center;
+}
+.box_login{
+	font-size : 20px;
+	padding-right: 25px;
+	padding-top: 50px;
+	float: right;
+	text-align:center;
+}
+
+
+.boxContainer {
+	overflow: hidden;
+}
+
+/* メンバー登録＆ログイン */
+	p.icon-heart {
+	padding-top:1px;
+}
+
+
+.icono {
+	margin: 0 auto 0 auto;
+	width: 10px;
+}
+
+span.my_icono-heart {color: #F200D6;}
+span.my_icono-user{color: #00CBCC;}
+
+/* clearfix */
+.boxContainer:before,
+.boxContainer:after {
+    content: "";
+    display: table;
+}
+ 
+.boxContainer:after {
+    clear: both;
+}
+ 
+.boxContainer {
+    zoom: 1;
+}
+
+/* HOMEボタン */
+.endmsg{
+	text-align: center;
+}
+
+/* メニューボタン */
+#PickUp_btn {
+	width: 100%;
+}
+a.menubtn {
+	margin: 10px;
+}
+.boxes {
+	overflow: hidden;
+	list-style: none;
+	word-spacing: -0.5em;
+	*letter-spacing: 0;
+	*word-spacing: 0;
+	*zoom: 1;
+	padding: 5;
+	margin: 0;
+}
+
+.boxes>* {
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+
+.boxes>[class^=box] {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	*display: inline;
+	*zoom: 1;
+	margin-top: 10px;
+}
+
+.boxes>.box01 {
+	width: 25%;
+}
+
+.boxes>.box02 {
+	width: 25%;
+}
+
+.boxes>.box03 {
+	width: 25%;
+}
+
+.boxes>.box04 {
+	width: 25%;
+}
+
+.boxes>.box05 {
+	width: 25%;
+}
+
+.boxes>.box06 {
+	width: 25%;
+}
+
+.boxes>.box07 {
+	width: 25%;
+}
+
+.boxes>.box08 {
+	width: 25%;
+}
+
+ul{
+	  -webkit-padding-start: 0px;
+	  text-align:center;
+}
+
+#view_img {
+	float: right;
+	width: 50%;
+}
+
+
+td{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.email_table{
+	font-size: 18px;
+}
+
+.profile_table img{
+	width: 100px;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+	/* メニューボタン切り替え */
+	#PickUp_btn {
+		display: none;
+	}
+	.btn {
+		background: #FFFFFF;
+		border: 3px solid #FFB1A6;
+		color: #111;
+		width: 300px;
+		margin: 0;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn2 {
+		background: #FFFFFF;
+		border: 3px solid #E4A6FF;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn3 {
+		background: #FFFFFF;
+		border: 3px solid #F1F287;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn4 {
+		background: #FFFFFF;
+		border: 3px solid #A9A6FF;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn5 {
+		background: #FFFFFF;
+		border: 3px solid #A6EBFF;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn6 {
+		background: #FFFFFF;
+		border: 3px solid #A6FFCC;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn7 {
+		background: #FFFFFF;
+		border: 3px solid #B4FFA6;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn8 {
+		background: #FFFFFF;
+		border: 3px solid #FFA7D2;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+
+	/* pictureページmobile用メニューボタン */
+		#PickUp_btn {
+		display: none;
+	}
+	.bk_btn {
+		background: #111;
+		border: 3px solid #FFB1A6;
+		color: #FFF;
+		width: 300px;
+		margin: 0;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn2 {
+		background: #111;
+		border: 3px solid #E4A6FF;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn3 {
+		background: #111;
+		border: 3px solid #F1F287;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn4 {
+		background: #111;
+		border: 3px solid #A9A6FF;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn5 {
+		background: #111;
+		border: 3px solid #A6EBFF;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn6 {
+		background: #111;
+		border: 3px solid #A6FFCC;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn7 {
+		background: #111;
+		border: 3px solid #B4FFA6;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn8 {
+		background: #111;
+		border: 3px solid #FFA7D2;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+/* スライダー画像の網掛け 少しちいさくしている。*/
+	#pageBody .mainVisual .mainVisualText {
+		position: absolute;
+		left: 50px;
+		bottom: 15px;
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0.4);
+		width: 60%;
+		width: 300px;
+		padding: 0px 15px;
+		padding-top: 0px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	body {
+		max-width: 100%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.contents {
+		max-width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.container {
+		max-width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+
+	
+	span.small_text_bk {
+		font-size: 10px;
+	}
+	.box_login {
+		font-size: 20px;
+		padding-right: 20px;
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	/* スライダーの左右にある＜＞を削除する */
+	.bx-prev {
+		display: none;
+	}
+	.bx-next {
+		display: none;
+	}
+	
+/* メニューボタン */
+	.boxes {
+		overflow: hidden;
+		list-style: none;
+		letter-spacing: -0.5em;
+		word-spacing: -0.5em;
+		*letter-spacing: 0;
+		*word-spacing: 0;
+		*zoom: 1;
+		padding: 0;
+		margin: 0;
+	}
+	.boxes>* {
+		letter-spacing: 0;
+		word-spacing: 0;
+	}
+	.boxes>[class^=box] {
+		display: inline-block;
+		vertical-align: top;
+		overflow: hidden;
+		*display: inline;
+		*zoom: 1;
+		margin-top: 10px;
+	}
+	.boxes>.box01 {
+		width: 100%;
+	}
+	.boxes>.box02 {
+		width: 100%;
+	}
+	.boxes>.box03 {
+		width: 100%;
+	}
+	.boxes>.box04 {
+		width: 100%;
+	}
+	.boxes>.box05 {
+		width: 100%;
+	}
+	.boxes>.box06 {
+		width: 100%;
+	}
+	.boxes>.box07 {
+		width: 100%;
+	}
+	.boxes>.box08 {
+		width: 100%;
+	}
+	
+	/* 参加募集・次回予告コメント */
+	.check {
+		font-size: small;
+	}
+	.check img {
+		width: 20%;
+	}
+	
+	/* PCメイン MPSロゴ */
+	img.main_logo_big {
+		width: 100px;
+	}
+
+	/* スライダー下にある見出し・本のgif画像 */
+	.openingmsg {
+		margin-bottom: 25px;
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.display_none {
+		display: none;
+	}
+	body {
+		max-width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+		.contents{
+			max-width: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.container {
+		max-width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+
+	/* スライダー画像の網掛け 少しちいさくしている。*/
+	#pageBody .mainVisual .mainVisualText {
+		position: absolute;
+		left: 20px;
+		bottom: 10px;
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0.4);
+		width: 60%;
+		padding: 15px 10px 20px 15px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#pageBody .mainVisual .mainVisualText h1 {
+		font-size: 15px;
+		line-height: 1.231;
+		margin: 0;
+	}
+	#pageBody .mainVisual .mainVisualText p {
+		font-size: 10px;
+		line-height: 1.5;
+		margin-bottom: 0;
+	}
+	
+}

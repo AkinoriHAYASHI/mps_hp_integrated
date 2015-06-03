@@ -1,0 +1,465 @@
+/* mobile用ボタンを消している */
+#PickUp_btn_mobile {
+	display: none;
+}
+
+/* タブレットの大きさからmobile用ボタンを表示する */
+@media only screen and (max-width:1200px) {
+	#PickUp_btn_mobile {
+		font-family: "Meiryo UI";
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+	#PickUp_btn_mobile tr {
+		width: 100%;
+	}
+	#PickUp_btn_mobile table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.contents {
+		max-width: 100%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	/* PCメイン MPSロゴ */
+	img.main_logo {
+		width: 100px;
+	}
+	
+	/* table用 */
+	tr{
+	width:100%;
+	font-size:10px;
+	}
+	th{
+	width:20%;
+	}
+	td{
+	width:25%;
+	font-size:15px;
+	}
+	.email_table {
+		font-size: 12px;
+	}
+
+	/* トップのスライダースマホ画面サイズ・文字フォント*/
+	.bg_img .slider li {
+		max-width: 100%;
+		background-repeat: no-repeat;
+		background-position: left center;
+		height: 180px;
+	}
+	.bg_img .slider img {
+		z-index: 0;
+		width: 100%;
+		height: 180px;
+	}
+	.slide1 h3 {
+		position: absolute;
+		left: 3%;
+		z-index: 1;
+		font-size: 25 px;
+		display: block;
+		color: #ffffff;
+		text-decoration: none;
+		text-shadow: 1 px 1 px 2 px #333333;
+		font-family: " �q���M�m�p�S ProN ", " Hiragino Kaku Gothic ProN ";
+		font-weight: bold;
+	}
+	.slide1 p {
+		position: absolute;
+		top: 10%;
+		left: 30%;
+		z-index: 1;
+		font-size: 10px;
+		display: block;
+		color: #ffffff;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px #333333;
+		font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+	}
+	.slide2 h3 {
+		position: absolute;
+		top: 5%;
+		left: 3%;
+		z-index: 1;
+		font-size: 30px;
+		display: block;
+		color: #000;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px #333333;
+		font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+		font-weight: bold;
+	}
+	.slide2 p {
+		position: absolute;
+		top: 40%;
+		left: 3%;
+		z-index: 1;
+		font-size: 15px;
+		display: block;
+		color: #000;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px #333333;
+		font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+		font-weight: bold;
+	}
+	.slide3 h3 {
+		position: absolute;
+		top: 5%;
+		left: 3%;
+		z-index: 1;
+		font-size: 30px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		text-shadow: 3px 3px 4px #333333;
+		font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+		font-weight: bold;
+	}
+	.slide3 p {
+		position: absolute;
+		top: 40%;
+		left: 3%;
+		z-index: 1;
+		font-size: 15px;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		text-shadow: 3px 3px 4px #333333;
+		font-family: "�q���M�m�p�S ProN", "Hiragino Kaku Gothic ProN";
+		font-weight: bold;
+	}
+	
+	/* mobile用メニューボタン */
+	#PickUp_btn {
+		display: none;
+	}
+	#PickUp_btn_mobile {
+		display: block;
+		font-size: 12px;
+		text-align: center;
+	}
+	#PickUp_btn_mobile table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+
+/* mobile用 スライダー画像の網掛け */
+	#pageBody .mainVisual .mainVisualText {
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0.4);
+		width: 80%;
+		padding: 10px 5px 15px 10px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#pageBody .mainVisual .mainVisualText h1 {
+		font-size: 15px;
+		line-height: 1.231;
+		margin: 0;
+	}
+	#pageBody .mainVisual .mainVisualText p {
+		font-size: 10px;
+		line-height: 1.231;
+		margin-bottom: 0;
+	}
+	
+	/* mobile用 コンテンツ文字 */
+	.mainmsg h5 {
+		font-size: small;
+		line-height: 30px;
+	}
+	.mainmsg h4 {
+		font-size: x-large;
+		line-height: 30px;
+	}
+	.mainmsg h1 {
+		font-size: large;
+		padding-top: 10px;
+	}
+	.mainmsg h2 {
+		font-weight: bold;
+		font-size: large;
+		padding-top: 10px;
+	}
+	li {
+		font-family: "Meiryo UI";
+		font-weight: bold;
+		font-size: 10px;
+	}
+	
+
+	/* mobile用 メニューボタン*/
+	.btn {
+		background: #FFFFFF;
+		border: 5px solid #FFB1A6;
+		color: #111;
+		width: 300px;
+		margin: 0;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn2 {
+		background: #FFFFFF;
+		border: 5px solid #E4A6FF;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn3 {
+		background: #FFFFFF;
+		border: 5px solid #F1F287;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn4 {
+		background: #FFFFFF;
+		border: 5px solid #A9A6FF;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn5 {
+		background: #FFFFFF;
+		border: 5px solid #A6FFCC;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn6 {
+		background: #FFFFFF;
+		border: 5px solid #A6EBFF;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn7 {
+		background: #FFFFFF;
+		border: 5px solid #B4FFA6;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.btn8 {
+		background: #FFFFFF;
+		border: 5px solid #FFA7D2;
+		color: #111;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+
+	/* pictureページmobile用 メニューボタン */
+	.bk_btn {
+		background: #111;
+		border: 5px solid #FFB1A6;
+		color: #FFF;
+		width: 300px;
+		margin: 0;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn2 {
+		background: #111;
+		border: 5px solid #E4A6FF;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn3 {
+		background: #111;
+		border: 5px solid #F1F287;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn4 {
+		background: #111;
+		border: 5px solid #A9A6FF;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn5 {
+		background: #111;
+		border: 5px solid #A6FFCC;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn6 {
+		background: #111;
+		border: 5px solid #A6EBFF;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn7 {
+		background: #111;
+		border: 5px solid #B4FFA6;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	.bk_btn8 {
+		background: #111;
+		border: 5px solid #FFA7D2;
+		color: #FFF;
+		width: 300px;
+		padding: 10px 0;
+		text-decoration: none;
+		display: table-cell;
+		text-align: center;
+	}
+	
+
+	/* ブラック線 */
+	hr.black_bar {
+		margin-top: 15px;
+	}
+	
+	/* 参加募集・次回予告コメント */
+	.checkit, #view_img {
+		width: 100%;
+	}
+
+
+/* コンテンツ文字 */
+	.mainmsg h5 {
+		font-size: 8px;
+		line-height: 30px;
+	}
+	.mainmsg h4 {
+		font-size: medium;
+		line-height: 30px;
+	}
+	.mainmsg h1 {
+		font-size: 15px;
+		padding-top: 10px;
+	}
+	.mainmsg ul li {
+		font-family: "Meiryo UI";
+		font-weight: bold;
+		font-size: 10px;
+	}
+	.mainmsg p {
+		font-weight: bold;
+		font-size: 10px;
+	}
+	
+/* 文字リンクにオンマウスでカラー */
+	a#na {
+		text-decoration: none;
+		color: #CC00FF;
+		font-size: 13px;
+	}
+	a#na:hover {
+		text-decoration: none;
+		color: #FF1493;
+		font-size: 13px;
+	}
+	a#na p {
+		font-size: 5px;
+	}
+
+	/* スライダー下にある見出し・本のgif画像 */
+	.openingmsg {
+		margin-bottom: 25px;
+		font-size: xx-small;
+	}
+
+	/* ツイッターバナーサイズ */
+	.twitter-size {
+		width: 70%;
+		margin: 30px auto 30px auto;
+	}
+	
+	/* footer文字 */
+		.copyright p {
+		text-align: center;
+		font-size: 8px;
+	}
+	/* メンバー登録＆ログイン */
+	p.icon-heart {
+	padding-top:5px;
+	}
+	.box2 {
+		padding-right: 0px;
+		margin-right: 10px;
+		margin-top: 3px;
+	}
+	.box3 {
+		padding-right: 10px;
+		margin-top: 0px;
+	}
+	.box_login {
+		padding-right: 10px;
+		padding-top: 35px;
+		font-size : 10px;
+	}
+	span.small_text_bk {
+		font-size: 10px;
+	}
+	.my_icono-user {
+		margin: 18px 0px 0px 0px;
+	}
+	.my_icono-heart {
+		margin: 10px 0px 0px 0px;
+	}
+}

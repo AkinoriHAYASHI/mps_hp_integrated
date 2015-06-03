@@ -1,0 +1,164 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Morning Project Samurai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=1.0,minimum-scale=1.0">
+<meta name="description" content="「ソフトウェア開発スキル」「リーダシップ」「コミュニケーション能力」の向上を図り、社会にアピールできるキャリアを積み重ねることを目的として活動します。">
+<meta name="keywords" content="Morning Project Samurai,モーニングプロジェクトサムライ,ソフトウェア,開発スキル,リーダシップ,プログラミング,プロジェクトマネジメント,キャリアアップ">
+<!-- メイン画像の動くスクリーン -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type='text/javascript' src="{% static 'js/jquery.bxslider.js' %}"></script>
+<!-- manuボタン -->
+<link href="{% static 'css/box.css' %}" rel="stylesheet">
+<!-- 文字その他色々 -->
+<link href="{% static 'css/pc.css' %}" rel="stylesheet">
+<!-- icono -->
+<link rel="stylesheet" href="{% static 'css/icono.min.css' %}">
+<link href="{% static 'css/mobile.css' %}" rel="stylesheet" type="text/css" media="all" />
+{% block css %} 
+{% endblock %}
+
+
+<link href="{% static 'css/style2.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- スクリーン -->
+<script src="{% static 'js/jquery-ui-1.8.23.custom.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.mousewheel.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/jquery.smoothdivscroll-1.3-min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/javascript_scroll.js' %}" type="text/javascript"></script>
+<!-- ぶるぶるボタン -->
+<script src="{% static 'js/javascript_rumble.js' %}" type="text/javascript"></script>
+<script type="text/javascript" src="{% static 'js/jquery.jrumble.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.easing2.1.3.js' %}"></script>
+
+<!-- hover -->
+<link href="{% static 'css/hover/hover-min.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').bxSlider({
+            auto : true, //自動再生
+            pause : 8000, //静止時間
+            speed : 1500, //エフェクトのスピード
+            mode : 'horizontal', //エフェクトの種類
+            pager : true,
+            prevText : '',
+            nextText: ''
+        });
+    });
+</script>
+{% block photo_slide %} 
+{% endblock %}
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header>
+            {% block logo %} 
+            <div class="boxContainer">
+            <div class="box1"><a href="{% url 'portal' %}"><img class="main_logo" alt="メインロゴ" src="{% static 'images/logo.png' %}"></a></div>
+            <div class="box2">{% if user.member.nickname %}<a href="{% url 'members:logout' %}" id="na"><span class="icono icono-user my_icono-user"></span><p>ログアウト</p></a>{% else %}<a href="{% url 'members:login' %}" id="na"><span class="icono icono-user my_icono-user"></span><p>ログイン</p></a>{% endif %}</div>
+            <div class="box3"><a href="{% url 'members:registration' %}" class="icon-heart" id="na"><span class="icono icono-heart my_icono-heart"></span><p class="icon-heart">メンバー登録</p></a></div>
+            <div class="box_login"><span class="small_text_bk">ようこそ</span>{% if user.member.nickname %}{{ user.member.nickname }}{% else %}ゲスト{% endif %}<span class="small_text_bk">さん</span></div>
+            </div>
+            <div class="bg_img">
+                <ul id="slider" class="slider">
+                    <li class="slide1"><a href="{% url 'portal' %}"><img src="{% static 'images/mps.png' %}" alt="" />
+                            <h3>世の先頭を走るための修行場</h3>
+                            <p>～見えるキャリアを創る～</p></a></li>
+                    <li class="slide2"><a href=""><img src="{% static 'images/By_Aleks_Dorohovich.jpg' %}" alt="" />
+                            <h3>ミーティング資料一覧</h3>
+                            <p>メンバー達のプレゼン発表に使用した資料一覧となります。</p></a></li>
+                    <li class="slide3"><a href=""><img src="{% static 'images/IMG_0627.JPG' %}" alt="" />
+                            <h3>メンバーＳＮＳ</h3>
+                            <p>愉快な仲間たちのプロフィールが見れます！！</p></a></li>
+                    <!-- li class="slide4"><a href=""><img src="images/b.jpg" alt=""/>Title , Link , or Desciption</a></li -->
+                </ul>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="openingmsg">
+                <a id="btn7"><img src="{% static 'images/sample.gif' %}" alt="" width="60"></a>
+                <p>
+                    MPS (Morning Project Samurai) は、 <br /> メンバー一人一人が「主体的」に「世の中の役に立つソフトウェア開発プロジェクト」を提案し、<br /> 「リーダーとなる機会を持つことのできる環境」を作ります。
+                </p>
+            </div>
+
+            {% endblock %}
+            <!-- //ヘッダー -->
+            <div class="menu_btn">
+            <div id="PickUp_btn">
+                <article class="row">
+                    <ul class="boxes">
+                        <li class="box01"><a href="{% url 'portal' %}" class="button menubtn"><span>次回予告</span><span>What's Next?</span></a></li>
+                        <li class="box02"><a href="{% url 'organizations' %}" class="button2 menubtn"><span>組織概要</span><span>About us</span></a></li>
+                        <li class="box03"><a href="{% url 'photos:photos' %}" class="button3 menubtn"><span>活動写真</span><span>Photos</span></a></li>
+                        <li class="box04"><a href="{% url 'members:members' %}" class="button4 menubtn"><span>メンバー紹介</span><span>Members</span></a></li>
+                    </ul>
+                </article>
+                <article class="row">
+                    <ul class="boxes">
+                        <li class="box05"><a href="{% url 'projects' %}" class="button5 menubtn"><span>プロジェクト</span><span>Our projects</span></a></li>
+                        <li class="box06"><a href="{% url 'portal' %}" class="button6 menubtn"><span>活動記録</span><span>Activity log</span></a></li>
+                        <li class="box07"><a href="{% url 'english' %}" class="button7 menubtn"><span>イングリッシュ</span><span>English page</span></a></li>
+                        <li class="box08"><a href="{% url 'girls' %}" class="button8 menubtn"><span>女子ページ</span><span>Girls page</span></a></li>
+                    </ul>
+                </article>
+            </div>
+            {% block eng %}
+            <div id="PickUp_btn_mobile">
+                {% block bk_btn %}
+                <table>
+                    <tr>
+                        <td><a class="btn" href="{% url 'portal' %}">次回予告</a></td>
+                        <td><a class="btn2" href="{% url 'organizations' %}">組織概要</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><a class="btn3" href="{% url 'photos:photos' %}">活動写真</a></td>
+                        <td><a class="btn4" href="{% url 'members:members' %}">メンバー紹介</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><a class="btn5" href="{% url 'projects' %}">プロジェクト</a></td>
+                        <td><a class="btn6" href="{% url 'portal' %}">活動記録</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><a class="btn7" href="{% url 'english' %}">English</a></td>
+                        <td><a class="btn8" href="{% url 'girls' %}">女子ページ</a></td>
+                    </tr>
+                </table>
+                {% endblock %}
+            </div>
+            </div>
+            {% endblock %} {% block contents %} {% endblock %}
+            <div class="checkit">
+                <a id="na" href="#">
+                    <h1 class="check">
+                        <img src="{% static 'images/star.png' %}" alt="" width="50">参加ご希望の方はこちら<img src="{% static 'images/star.png' %}" alt="" width="50">
+                    </h1>
+                </a>
+            </div>
+            <div class="endmsg">
+                <p>
+                    技術のレベル、年齢、性別は問いません<br /> やる気のある方、大歓迎です!!(´∀｀)
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright (C) 2014 Narumi Tomiyama All Rights Reserved.</p>
+        </div>
+    </footer>
+    {% block photo_slide2 %} 
+    {% endblock %}
+</body>
+</html>

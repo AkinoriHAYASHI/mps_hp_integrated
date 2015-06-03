@@ -1,0 +1,46 @@
+/* table td の 背景色 */
+td.table_color_title {
+	background-color: #CCBCE0;
+	width:20%;
+}
+td.table_color_contents {
+	background-color: #F7F7F7;
+		width:80%;
+}
+.table-responsive table{
+	width:100%;
+}
+
+div#vision {
+	padding: 40px 0;
+	line-height: 30px;
+}
+
+/* table の 線を白にして消している。 */
+.table-responsive table tbody {
+	border: 2px solid #FFFFFF;
+}
+.table-responsive td{
+padding: 10px 5px 10px 5px;	
+}
+.table-responsive table{
+margin:0 auto 0 auto;
+}
+
+
+.table-bordered>thead>tr>td {
+	border: 1px solid #FFFFFF;
+	padding: 12px;
+}
+
+@media only screen and (max-width:480px) {
+	
+td.table_color_title {
+	width:50px;
+	font-size:10px;
+}
+td.table_color_contents {
+		 width:500px;
+}
+	
+	}

@@ -1,0 +1,129 @@
+.form_custom input,textarea{
+	margin-left:100px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.form_custom p{
+	margin:0px 0px;
+}
+
+input,
+textarea {
+	margin-top: 1em;
+	padding: .5em;
+}
+
+
+.custom input[type="text"],
+.custom input[type="password"],
+.custom textarea {
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.custom input[type="text"]:focus,
+.custom input[type="password"]:focus,
+.custom textarea:focus {
+	box-shadow: 0 0 7px #1abc9c;
+	border: 1px solid #1abc9c;
+}
+
+/* 登録ボタン */
+.css_btn_class {
+	font-size:24px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:13px;
+	border:0px solid #dcdcdc;
+	padding:9px 50px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #10dec2 5%, #e978ff 100% );
+	background:-ms-linear-gradient( top, #10dec2 5%, #e978ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#10dec2', endColorstr='#e978ff');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #10dec2), color-stop(100%, #e978ff) );
+	background-color:#10dec2;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:0px 0px 0px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+}.css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+
+/* 注意アラート（赤） */
+.alert-danger input[type="text"],
+.alert-danger input[type="password"],
+.alert-danger textarea{
+		outline: none;
+	border: 1px solid #ebccd1;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	  background-color: #f2dede;
+
+}
+.alert input[type="text"]:focus,
+.alert input[type="password"]:focus,
+.alert textarea:focus {
+  border: 1px solid #a94442;
+  border-radius: 4px;
+  	box-shadow: 0 0 7px #DA0035;
+}
+
+.alert-label{
+	 color: #a94442;
+}
+
+/* 性別の空間をあわせている */
+ul#id_gender{
+	text-align: justify;
+
+}
+
+
+@media only screen and (max-width:768px) {
+.form_custom input{
+	margin-left:0px;
+}
+.form_custom textarea{
+	margin-left:0px;
+
+}
+}
+
+@media only screen and (max-width:480px) {
+	input  {
+		margin-top: 0;
+	}
+	.form_custom {
+		padding: 2px;
+	}
+	p {
+		font-size: 10px;
+	}
+	.form_custom td  {
+		width: 100px;
+		align: rigth;
+	}
+	.form_custom p {
+		width: 100px;
+	}
+	.form_custom textarea {
+		margin-left: 0px;
+		width: 170px;
+		height: 50px;
+	}
+	.css_btn_class {
+		font-size: 8px;
+		padding: 10px 30px;
+		margin-top: 20px;
+	}
+
+}

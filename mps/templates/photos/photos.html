@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="{% static 'css/picture.css' %}" rel="stylesheet">
+{% endblock %}  
+{% block contents %}
+
+
+<script type="text/javascript" src="{% static 'js/flickr_search.js' %}"></script>
+        <script type="text/javascript"><!--
+            var q = GetQueryString(); 
+            document.write('<center><strong><h1>'+q['date']+'</h1></strong></center>');
+        -->
+        
+        </script>
+        
+        <script type="text/javascript">
+        <!--
+        window.onload = function () {
+            photo_search({}, new Date( q['date']));
+        }
+        -->     
+        </script>
+		<div id="photos_here">Loading...</div>
+
+		<!--<div>
+        <img border="0" src="images/b.jpg" width="240" height="180" alt="イラスト1">
+        <img border="0" src="images/q.jpg" width="240" height="180" alt="イラスト2">
+        <img border="0" src="images/123Network.jpg" width="240" height="180" alt="イラスト3">
+        </div>
+        
+        <div>
+        <center><img border="0" src="images/img_1.jpg" width="400" height="300" alt="イラスト4"></center>
+        </div>-->
+                <h1>活動の様子ですヽ(•̀ω•́ )ゝ✧<span class="small_text">クリックすると他の画像が見れます。</span></h1>
+        <a href="{% url 'photos:slide' %}"><h2>第２回ミーティング</h2></a>
+{% endblock %}

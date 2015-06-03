@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block css %}
+<link href="{% static '' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contents %}
+
+<div class="container">
+    <div class="mainmsg">
+        <h4>{{ member.nickname }}さん！！<br />
+            メンバー登録が完了しました。</h4>
+        <p>※いつでも内容の変更が可能です⁽˙³˙⁾◟( •ω• )◞⁽˙³˙⁾</p>
+    </div>
+</div>
+
+{% endblock %}

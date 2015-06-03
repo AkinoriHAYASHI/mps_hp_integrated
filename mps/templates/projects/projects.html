@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% load staticfiles %} 
+ {% block contents %}
+
+            <div class="mainct mainmsg">
+            {% for project in projects_list %}
+                <h1>{{ project.title }}</h1>
+                <p>{{ project.members }}</p>
+                <p>{{ project.summary }}</p>
+                <p>{{ project.learnings }}</p>
+            {% endfor %}
+    <div class="endmsg">
+        <a id="btn8" href="index.htm"><img src="{% static 'images/HOME.png' %}"></a>
+    </div>
+</div>
+            
+ {% endblock %}

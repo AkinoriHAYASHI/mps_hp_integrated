@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="" rel="stylesheet">
+{% endblock %}
+
+{% block contents %}
+
+<div class="mainct mainmsg">
+    <h1>組織概要</h1>
+    <p>
+        MPS (Morning Project Samurai) は、<br /> メンバー一人一人が「主体的」に「世の中の役に立つソフトウェア開発プロジェクト」を提案し、<br /> 「リーダーとなる機会を持つことのできる環境」を作ります。<br /> メンバーみんなで力を合わせてプロジェクトを実現することで<br /> 「ソフトウェア開発スキル」「リーダシップ」「コミュニケーション能力」の向上を図り、<br /> 社会にアピールできるキャリアを積み重ねることを目的として活動します。
+    </p>
+
+
+    <hr class="glay_bar">
+    {% for i in '01' %}
+    <h3>{% if i == '0' %}本部{% else %}支部{% endif %}</h3>
+    <table class="profile_table">
+        {% for organization in organizations_list %} {% if i == '0' and organization.is_division or i == '1' and not organization.is_division %}
+        <th></th>
+        <th>名前</th>
+        <th class="display_none">メール</th>
+        <th>リーダー</th>
+        <th>ビジョン</th>
+        <tr>
+            <td><img src="{{ MEDIA_URL }}{{ organization.image }}"></td>
+            <td><a href="{% url 'organizations:detail' organization_id=organization.id %}">{{ organization.name }}</a></td>
+            <td class="display_none">{{ organization.email }}</td>
+            <td>{{ organization.leader }}</td>
+            <td>{{ organization.vision }}</td>
+        </tr>
+    </table>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+    <div class="endmsg">
+        <a id="btn8" href="#"><img src="{% static 'images/HOME.png' %}"></a>
+    </div>
+</div>
+
+{% endblock %}

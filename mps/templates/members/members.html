@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="{% static 'css/member.css' %}" rel="stylesheet">
+{% endblock %} 
+{% block contents %}
+
+
+
+    <div class="mainct mainmsg">
+        <h1 class="mainmsg">レギュラーメンバー</h1>
+        <p>(※３回以上参加している方)</p>
+        <table class="profile_table">
+            <th>写真</th>
+            <th>名前</th>
+            <th>得意分野</th>
+            <th>ひとこと</th>
+            {% for member in members_list %}
+            <tr>
+                <td><img class="profile_image" src="{% static 'images/star.png' %}" alt=""></td>
+                <td><a href="{% url 'members:detail' user_id=member.user.id %}">{{ member.nickname }}</a></td>
+                <td>{{ member.spacialities }}</td>
+                <td>{{ member.introduction }}</td>
+            </tr>
+            {% endfor %}
+            <hr class="glay_bar">
+        </table>
+    </div>
+
+
+{% endblock %}

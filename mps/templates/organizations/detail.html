@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="{% static 'css/organization.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contents %}
+
+
+        <h2>組織概要</h2>
+
+        <div class="table-responsive">
+        <table class="table table-bordered table-striped js-options-table">
+        <tbody>
+        <tr>
+            <td class="table_color_title">団体名</td>
+            <td class="table_color_contents">{{ organization.name }}</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td class="table_color_title">ビジョン</td>
+            <td class="table_color_contents">{{ organization.vision }}</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td class="table_color_title">代表</td>
+            <td class="table_color_contents">{{ organization.leader.member.last_name }}{{ organization.leader.member.first_name }}</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td class="table_color_title">設立</td>
+            <td class="table_color_contents">{{ organization.foundation | date:'Y年n月j日' }}</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td class="table_color_title">Email</td>
+            <td class="table_color_contents email_table">{{ organization.email }}</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+
+{% endblock %}

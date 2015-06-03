@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% load staticfiles %} 
+
+
+        {% block eng %}
+        <div id="PickUp_btn_mobile">
+            <table>
+                    <tr>
+                        <td><a class="btn" href="{% url 'portal' %}">次回予告</a></td>
+                        <td><a class="btn2" href="{% url 'organization' %}">組織概要</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><a class="btn3" href="{% url 'photos:photos' %}">活動写真</a></td>
+                        <td><a class="btn4" href="{% url 'members:members' %}">メンバー紹介</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><a class="btn5" href="{% url 'projects' %}">プロジェクト</a></td>
+                        <td><a class="btn6" href="{% url 'portal' %}">活動記録</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><a class="btn7" href="{% url 'english' %}">English</a></td>
+                        <td><a class="btn8" href="{% url 'girls' %}">女子ページ</a></td>
+                    </tr>
+                </table>
+        </div>
+        {% endblock %}
+
+        {% block contents %}
+            <div class="mainmsg">
+                <h1>Activities</h1>
+                <ul> 
+                    <li>Project meeting (Proposing projects, Reporting progress of projects)</li>
+                    <li>Study meeting (Introducing the books members read, sharing knowledge, etc…)</li>
+                </ul>
+                <h1>Eligible people</h1>
+                <ul>
+                    <li>People who are aware of issues about current software development processes,</li>
+                    <li>People who are willing to solve social or daily problems,</li>
+                    <li>People who are willing to develop software,</li>
+                    <li>People who are interested in programming,</li>
+                    <li>People who are interested in project management,</li>
+                    <li>People who are interested in user interface design,</li>
+                    <li>People who are willing to improve leadership,</li>
+                    <li>People who are willing to share knowledge and skills,</li>
+                    <li>People who are willing to improve careers,</li>
+                    <li>People who are willing to contribute to society by developing software.</li>
+                </ul>
+                    <a id="na" href="#">
+                        <p>Click here to make contact and join us?(´∀｀)</p> 
+                    </a>
+                <div class="endmsg">
+                    <h1>Motivation is the only thing you need!!<br /> Skills, knowledge, age and genders do not matter!!</h1>
+                <a id="btn8" href="#"><img class="btn_center" src="{% static 'images/HOME.png' %}"></a>
+                </div>
+                
+            </div>
+
+        {% endblock %}

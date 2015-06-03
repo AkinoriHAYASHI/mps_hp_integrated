@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block css %}
+<link href="{% static 'css/member.css' %}" rel="stylesheet">
+{% endblock %} 
+{% block contents %}
+
+
+<table class="profile_table">
+            <th>写真</th>
+            <th>名前</th>
+            <th>得意分野</th>
+            <th>ひとこと</th>
+           
+            <tr>
+                <td><img class="profile_image" src="{% static 'images/star.png' %}" alt=""></td>
+
+                <td>{{ member.nickname }}</td>
+
+                <td>{{ member.spacialities }}</td>
+
+                <td>{{ member.introduction }}</td>
+            </tr>
+          
+            <hr class="glay_bar">
+        </table>
+
+{% endblock %}

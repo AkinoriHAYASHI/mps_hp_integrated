@@ -1,0 +1,8 @@
+.idea
+**/__pycache__
+**/*.pdf
+**/db.sqlite3
+**/credentials/*
+**/.project
+**/.pydevproject
+**/migrations/0*
